@@ -6,6 +6,8 @@ COPY ./src markupsafe/src
 COPY ./mayhem markupsafe/mayhem
 
 RUN chmod +x /markupsafe/mayhem/musafe_fuzzer.py
+RUN chmod +x /markupsafe/mayhem/escape_fuzzer.sh
+RUN chmod +x /markupsafe/mayhem/unescape_fuzzer.sh
 
 ENV PYTHONPATH $PYTHONPATH:/markupsafe/src
 
