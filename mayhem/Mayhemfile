@@ -1,0 +1,7 @@
+image: bugraonal/markupsafe:latest
+duration: 90
+project: markupsafe
+target: escape_fuzzer
+cmds:
+  - cmd: /markupsafe/mayhem/escape_fuzzer.py
+    libfuzzer: true
