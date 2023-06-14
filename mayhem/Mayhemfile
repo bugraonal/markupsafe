@@ -5,5 +5,3 @@ target: escape_fuzzer
 cmds:
   - cmd: /markupsafe/mayhem/escape_fuzzer.sh
     libfuzzer: true
-  - cmd: /markupsafe/mayhem/unescape_fuzzer.sh
-    libfuzzer: true
