@@ -1,4 +1,4 @@
-image: bugraonal/markupsafe:latest
+image: ghcr.io/bugraonal/markupsafe:latest
 duration: 180
 project: markupsafe
 target: escape_fuzzer
