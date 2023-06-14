@@ -5,7 +5,7 @@ RUN mkdir -p /markupsafe/src
 COPY ./src markupsafe/src
 COPY ./mayhem markupsafe/mayhem
 
-RUN chmod +x /markupsafe/mayhem/escape_fuzzer.py
+RUN chmod +x /markupsafe/mayhem/mdsafe_fuzzer.py
 
 ENV PYTHONPATH $PYTHONPATH:/markupsafe/src
 
