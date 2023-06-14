@@ -5,5 +5,7 @@ target: escape_fuzzer
 cmds:
   - cmd: /markupsafe/mayhem/escape_fuzzer.py
     libfuzzer: true
+    dictionary: /markupsafe/mayhem/html.dict
   - cmd: /markupsafe/mayhem/unescape_fuzzer.py
     libfuzzer: true
+    dictionary: /markupsafe/mayhem/html.dict
