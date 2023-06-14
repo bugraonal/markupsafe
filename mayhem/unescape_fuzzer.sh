@@ -1,2 +1,2 @@
 #!/bin/bash
-./musafe_fuzzer.py unescape
+/markupsafe/mayhem/musafe_fuzzer.py unescape

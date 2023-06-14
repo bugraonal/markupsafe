@@ -1,2 +1,2 @@
 #!/bin/bash
-./musafe_fuzzer.py escape
+/markupsafe/mayhem/musafe_fuzzer.py escape
