@@ -2,7 +2,6 @@ image: ghcr.io/bugraonal/markupsafe:latest
 duration: 180
 project: markupsafe
 target: escape_fuzzer
-dictionary: /markupsafe/mayhem/html.dict
 cmds:
   - cmd: /markupsafe/mayhem/escape_fuzzer.py
     libfuzzer: true
