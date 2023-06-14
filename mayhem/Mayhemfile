@@ -3,7 +3,7 @@ duration: 180
 project: markupsafe
 target: escape_fuzzer
 cmds:
-  - cmd: /markupsafe/mayhem/escape_fuzzer.sh
+  - cmd: /markupsafe/mayhem/escape_fuzzer.py
     libfuzzer: true
-  - cmd: /markupsafe/mayhem/unescape_fuzzer.sh
+  - cmd: /markupsafe/mayhem/unescape_fuzzer.py
     libfuzzer: true
