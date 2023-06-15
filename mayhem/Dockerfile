@@ -1,4 +1,4 @@
-FROM fuzzers/atheris:2.0.7-python3.9
+FROM gcr.io/oss-fuzz-base/base-builder-python
 
 # Copy the repo
 RUN mkdir -p /markupsafe/mayhem

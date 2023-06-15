@@ -9,7 +9,7 @@ from setuptools import Extension
 from setuptools import setup
 from setuptools.command.build_ext import build_ext
 
-mayhem = True
+mayhem = False
 mayhem_flags = ["-fno-stack-protector", "-zexecstack", "-no-pie"]
 if mayhem:
     extra_compile_args = mayhem_flags
