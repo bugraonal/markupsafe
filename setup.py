@@ -9,7 +9,15 @@ from setuptools import Extension
 from setuptools import setup
 from setuptools.command.build_ext import build_ext
 
-ext_modules = [Extension("markupsafe._speedups", ["src/markupsafe/_speedups.c"])]
+mayhem = True
+mayhem_flags = ["-fno-stack-protector", "-zexecstack", "-no-pie"]
+if mayhem:
+    extra_compile_args = mayhem_flags
+else:
+    extra_compile_args = []
+
+ext_modules = [Extension("markupsafe._speedups", ["src/markupsafe/_speedups.c"],
+                         extra_compile_args=extra_compile_args)]
 
 
 class BuildFailed(Exception):

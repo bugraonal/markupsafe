@@ -1,5 +1,5 @@
 image: ghcr.io/bugraonal/markupsafe:latest
-duration: 180
+duration: 90
 project: markupsafe
 target: escape_fuzzer
 cmds:
